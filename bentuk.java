@@ -13,4 +13,9 @@ public class bentuk {
     public void setWarna(String warna) {
         this.warna = warna;
     }
+
+    public void printInfo() {
+        System.out.println("Bentuk");
+        System.out.println("Warna : " + warna);
+    }
 }

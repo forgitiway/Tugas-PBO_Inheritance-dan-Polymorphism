@@ -21,7 +21,9 @@ public class bujurSangkar extends bentuk {
 
     @Override
     public void printInfo() {
-        System.out.println("BujurSangkar [" + getWarna()
-                + "], luas = [" + hitungLuas() + "]");
+        System.out.println("Bujur Sangkar");
+        System.out.println("Warna : " + getWarna());
+        System.out.println("Sisi  : " + getSisi());
+        System.out.println("Luas  : " + hitungLuas());
     }
 }

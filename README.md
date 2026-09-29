@@ -1,35 +1,62 @@
-# Tugas-PBO_Inheritance-dan-Polymorphism
+# Exercise Inheritance, Encapsulation, and Polymorphism
 
-Program Java sederhana untuk menerapkan konsep **Inheritance** dan **Polymorphism**.
+Program ini dibuat untuk menerapkan konsep dasar Object-Oriented Programming (OOP), yaitu **Encapsulation, Inheritance, dan Polymorphism** menggunakan bahasa pemrograman Java.
 
 ## Class yang Digunakan
 
-- `Bentuk` → parent class
+Program terdiri dari beberapa class:
+
+- `Bentuk` → sebagai parent class
 - `BujurSangkar` → turunan dari `Bentuk`
 - `Lingkaran` → turunan dari `Bentuk`
 - `Silinder` → turunan dari `Lingkaran`
-- `Main` → menjalankan dan menguji program
+- `Main` → digunakan untuk membuat objek dan menjalankan program
 
-## Penerapan Inheritance
+1. Encapsulation
 
-Inheritance diterapkan menggunakan keyword `extends`.
+    Encapsulation diterapkan dengan menggunakan private pada atribut dan getter/setter untuk mengakses atau mengubah nilai atribut.
+    Contoh pada Bentuk.java:
 
-```java
-public class BujurSangkar extends Bentuk
-public class Lingkaran extends Bentuk
-public class Silinder extends Lingkaran
+    ![ENCAP](image-1.png)
 
-## Penerapan Polymorphism
+    Contoh pada BujurSangkar.java:
 
-Polymorphism diterapkan dengan menggunakan referensi dari parent class
-`Bentuk` untuk menyimpan objek dari class turunannya.
+   ![ENCAP](image-2.png)
 
-Contohnya pada `Main.java`:
+    Contoh pada Lingkaran.java:
 
-```java
-Bentuk bujur = new BujurSangkar(5, "Biru");
-Bentuk lingkar = new Lingkaran(7, "Hijau");
-Bentuk silinder = new Silinder(10, 7, "Kuning");
+   ![ENCAP](image-3.png)
 
-# Output Program
-![output](image.png)
+    Contoh pada Silinder.java:
+
+    ![NCAP](image-4.png)
+
+2. Inheritance
+
+    Inheritance diterapkan menggunakan keyword extends. Class turunan dapat menggunakan atribut dan method yang berasal dari class parent.
+
+    Contoh pada BujurSangkar.java:
+
+   ![IN](image-5.png)
+
+    Contoh pada Lingkaran.java:
+
+    ![IN](image-6.png)
+
+    Contoh pada Silinder.java:
+
+   ![IN](image-7.png)
+
+    Pada Silinder, terjadi multilevel inheritance karena Silinder mewarisi Lingkaran, sedangkan Lingkaran sendiri mewarisi Bentuk.
+
+3. Polymorphism
+
+    Polymorphism diterapkan dengan menggunakan tipe parent class Bentuk untuk menyimpan objek dari class turunannya.
+
+    Contoh pada Main.java:
+    ![POLY](image-10.png)
+
+OUTPUT : 
+![OUTPUT](image-9.png)
+
+
