@@ -19,9 +19,4 @@ public class lingkaran extends bentuk {
         return Math.PI * radius * radius;
     }
 
-    @Override
-    public void printInfo() {
-        System.out.println("Lingkaran [" + getWarna()
-                + "], luas = [" + hitungLuas() + "]");
-    }
 }

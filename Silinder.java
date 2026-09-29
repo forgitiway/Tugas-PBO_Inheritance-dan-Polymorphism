@@ -19,9 +19,4 @@ public class Silinder extends lingkaran {
         return hitungLuas() * tinggi;
     }
 
-    @Override
-    public void printInfo() {
-        System.out.println("Silinder [" + getWarna()
-                + "], volume = [" + hitungVolume() + "]");
-    }
 }

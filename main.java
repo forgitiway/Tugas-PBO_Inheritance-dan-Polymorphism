@@ -2,11 +2,9 @@ public class main {
 
     public static void main(String[] args) {
 
-        // Bentuk
         bentuk bentuk = new bentuk("Merah");
         System.out.println("Warna bentuk: " + bentuk.getWarna());
 
-        // Bujur Sangkar
         bujurSangkar bujurSangkar = new bujurSangkar(5, "Biru");
 
         System.out.println("\n=== Bujur Sangkar ===");
